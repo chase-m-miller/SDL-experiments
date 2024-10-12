@@ -9,10 +9,12 @@ int main(void) {
 		return 0;
 	}
 	printf("SDL successfully initialized!\n");
+
 	SDL_version *ver;
 	SDL_GetVersion(ver);
 	printf("%d.%d.%d\n", ver->major, ver->minor, ver->patch);
 
 	SDL_Quit();
+
 	return 0;
 }
